@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: db
+  username: postgres
+  password: postgres
+  pool: 5
+
+development:
+  <<: *default
+  database: delivery_center_development
+  port: 5432
+
+  test:
+  <<: *default
+  database: delivery_center_test
+
+production:
+  <<: *default
+  database: delivery_center_production
+  username: delivery_center
+  password: <%= ENV['DELIVERY_CENTER_DATABASE_PASSWORD'] %>
