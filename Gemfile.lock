@@ -102,6 +102,8 @@ GEM
       dry-initializer (~> 3.0)
       dry-schema (~> 1.5, >= 1.5.2)
     erubi (1.10.0)
+    factory_bot (6.1.0)
+      activesupport (>= 5.0.0)
     ffi (1.15.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -201,6 +203,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   dry-validation (~> 1.6)
+  factory_bot
   interactor (~> 3.0)
   listen (~> 3.3)
   pg (~> 1.1)

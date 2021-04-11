@@ -11,7 +11,7 @@ development:
   database: delivery_center_development
   port: 5432
 
-  test:
+test:
   <<: *default
   database: delivery_center_test
 
