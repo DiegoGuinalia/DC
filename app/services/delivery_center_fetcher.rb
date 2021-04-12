@@ -9,7 +9,6 @@ class DeliveryCenterFetcher
   end
 
   def send_order(payload)
-    binding.pry
     Faraday.post(@uri, payload, @headers)
   end
   
