@@ -15,6 +15,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 5.0.0'
   gem 'factory_bot'
+  gem 'shoulda-matchers'
   gem 'pry', '~> 0.13.1'
 end
 
