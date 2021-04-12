@@ -7,12 +7,11 @@ class PaymentsParser
 
   def parse_payments
     payments_parse = []
-
     @payments.map do |payment|
       payments_parse << {
         type: payment[:payment_type].upcase,
         value: payment[:total_paid_amount]
-      }
-    end
+    }
+    end.flatten
   end
 end

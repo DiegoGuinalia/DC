@@ -1,5 +1,5 @@
 class PlaceOrder
   include Interactor::Organizer
 
-  organize Parse::OrderData
+  organize Parse::OrderData, Integrate::Order
 end

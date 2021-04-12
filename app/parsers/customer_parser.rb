@@ -10,7 +10,7 @@ class CustomerParser
       name: @params[:nickname],
       email: @params[:email],
       external_code: @params[:id],
-      contact: "#{@params[:phone][:area_code].to_s} #{@params[:phone][:number]}"
+      contact: "#{@params[:phone][:area_code].to_s}#{@params[:phone][:number]}"
     }
   end
 end

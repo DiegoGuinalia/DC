@@ -16,6 +16,6 @@ class ItemsParser
         quantity: order_item[:quantity],
         total: order_item[:unit_price]
       }
-    end
+    end.flatten
   end
 end

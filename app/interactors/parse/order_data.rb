@@ -13,7 +13,6 @@ module Parse
   
     def validate
       result = OrderContract.new.call(params.to_unsafe_h)
-  
       context.fail!(error: result.errors.to_h) unless result.success?
     end
   
